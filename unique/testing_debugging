@@ -1,0 +1,25 @@
+The term testing refers to testing the correctness of the program; that is, making sure
+that the program does what it is supposed to do. The term debugging refers to finding and
+fixing the errors, if they exist.
+
+There are two types of testing—black-box testing and white-box testing. In black-box
+testing, you do not know the internal working of the algorithm or function. You
+know only what the function does. Black-box testing is based on inputs and outputs.
+The test cases for black-box testing are usually selected by creating equivalence categories.
+If a function works for one input in the equivalence category, it is expected to work for
+other inputs in the same category.
+
+Suppose that the function isWithInRange returns a value true if an integer is greater
+than or equal to 0 and less than or equal to 100. In black-box testing, the function is
+tested on values that surround and fall on the boundaries, called boundary values, as
+well as general values from the equivalence categories. For the function isWithInRange,
+in black-box testing, the boundary values might be:-1, 0, 1, 99, 100, and 101; and so the
+test values might be-500,-1, 0, 1, 50, 99, 100, 101, and 500.
+
+White-box testing relies on the internal structure and implementation of a function or
+algorithm. The objective is to ensure that every part of the function or algorithm is
+executed at least once. Suppose that you want to ensure whether an if statement works
+properly. The test cases must consist of at least one input for which the if statement
+evaluates to true and at least one case for which it evaluates to false. Loops and other
+structures can be tested similarly
+
