@@ -1,0 +1,76 @@
+
+								+---------------------------------------------------------------+
+								|                WeatherDataAnalysisSystem                      |
+								|---------------------------------------------------------------|
+								| - dataRetriever: DataRetriever                                |
+								| - trendAnalyzer: TrendAnalysis                                |
+								| - statsAnalyzer: StatsAnalysis                                |
+								| - outlierAnalyzer: OutlierAnalysis                            |
+								| - weatherRecords: vector<WeatherRecord>                       |
+								+---------------------------------------------------------------+
+                                  |                               |                           |
+                                  |                               |                           |
+                                  v                               v                           v
++----------------------------------+      +------------------------------------+            +--------------------------------------+
+|         DataRetriever            |      |         TrendAnalysis              |            |        StatsAnalysis                 |
+|----------------------------------|      |------------------------------------|            |--------------------------------------|
+| - records: vector<WeatherRecord> |      | + analyzeDailyTrend(): vector<pair |            | + computeStats():tuple<Date, double, |         
+| + loadData(fileName): bool       |      |     <Date, string>>                |            |   Date, double, double>              |
+| + saveToFile(fileName): void     |      | + analyzeOverallTrend(): string    |            +--------------------------------------+
+| + addRecord(record): void        |      +------------------------------------+
++----------------------------------+
+           |
+           |
+           v
++-------------------------------+   
+|        WeatherRecord          |
+|-------------------------------|
+| - date: Date                  |
+| - temperature: double         |
+| - humidity: double            |
+|-------------------------------|
+| + getTemperature(): double    |
+| + getHumidity(): double       |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|        MinHeap                |
+|-------------------------------|
+| - heap: vector<double>        |
+|-------------------------------|
+| + insert(value): void         |
+| + extractMin(): double        |
+| + peek(): double              |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|        MaxHeap                |
+|-------------------------------|
+| - heap: vector<double>        |
+|-------------------------------|
+| + insert(value): void         |
+| + extractMax(): double        |
+| + peek(): double              |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|          Date                 |
+|-------------------------------|
+| - day: int                    |
+| - month: int                  |
+| - year: int                   |
+|-------------------------------|
+| + toString(): string          |
+| + compare(otherDate): bool    |
++-------------------------------+
+           |
+           v
++----------------------------------+
+|       OutlierAnalysis            |
+|----------------------------------|
+| + detectOutliers(): vector<pair  |
+|   <Date, string>>                |
++----------------------------------+
