@@ -70,6 +70,3 @@ git push origin main
 
 ## 🤝 Contributing
 Feel free to explore, fork, and contribute by submitting a pull request! 🚀
-
-## 📜 License
-This project is for educational purposes. Use it to learn and improve your skills! 🔥
