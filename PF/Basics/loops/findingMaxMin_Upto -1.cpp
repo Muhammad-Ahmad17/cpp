@@ -20,9 +20,11 @@ int main() {
     int min = numeric_limits<int>::max();  // Largest possible integer
 
 
-    cout << min;
+    //cout << min;
+
+    /*program is evaluating each number untill -1 */
     cout << "Enter numbers (separate by space) press -1 to end:";
-    cin >> number;
+    cin >> number; // initial number 
 
     while(number!=-1) {
         if (number>max) {
@@ -30,7 +32,7 @@ int main() {
             max=number;
         }
         if (number<min) min=number;
-        cin >> number;
+        cin >> number; // repetition of number untill -1
     }
 
     cout << "Max:" << max << "\nMin:" << min << "\n2nd-Max:" << max_1;

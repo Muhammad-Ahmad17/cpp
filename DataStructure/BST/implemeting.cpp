@@ -150,26 +150,24 @@ int main() {
 
 
     cout << "In-order traversal: ";
-    tree.display();  // To verify the tree structure
+    tree.display();  
     cout << "min val in BST ";
-    cout << tree.smallestInBST(tree.root);  // To verify the tree structure
-    cout << "\nmax val in BST ";
-    cout << tree.largestInBST(tree.root);  // To verify the tree structure
+    cout << tree.smallestInBST(tree.root); 
+    cout << tree.largestInBST(tree.root); 
 
     cout << "\nno of nodes in tree ";
-    cout << tree.noOfNodes(tree.root);  // To verify the tree structure
-
+    cout << tree.noOfNodes(tree.root);  
     cout << "\nno of leave nodes in tree ";
-    cout << tree.noOfLeaveNodes(tree.root);  // To verify the tree structure
+    cout << tree.noOfLeaveNodes(tree.root); 
 
     cout << "\nis present in tree ";
-    cout << tree.isAvailable(tree.root,70);  // To verify the tree structure
+    cout << tree.isAvailable(tree.root,70); 
 
     cout << "\nheight tree ";
-    cout << tree.heightOfTree(tree.root);  // To verify the tree structure
+    cout << tree.heightOfTree(tree.root); 
 
     cout << "\ndelete node";
-    tree.deleteNode(tree.root,20);  // To verify the tree structure
+    tree.deleteNode(tree.root,20); 
     cout << "In-order traversal: ";
     tree.display();
     return 0;
