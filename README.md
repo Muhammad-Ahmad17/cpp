@@ -1,4 +1,4 @@
-# C++ Projects Repository 🚀
+# C++ Repository 🚀
 
 Welcome to my **C++ Projects Repository**! 🎉 This repository contains my programming work across different semesters, focusing on core concepts of C++ programming.
 
