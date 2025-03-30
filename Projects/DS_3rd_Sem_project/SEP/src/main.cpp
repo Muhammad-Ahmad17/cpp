@@ -21,13 +21,11 @@ int main() {
     // Team Members Section
     cout << "\n" << setw(consoleWidth) << "===================== TEAM MEMBERS ======================" << "\n";
     cout << setw(consoleWidth) << "---------------------------------------------------------" << "\n";
-    cout << setw(consoleWidth) << "1. Muhammad Ahmad Habib (FA23-BCE-055)                   " << "\n";
-    cout << setw(consoleWidth) << "2. Muhammad Ahmad (FA23-BCE-113)                         " << "\n";
-    cout << setw(consoleWidth) << "3. Zeeshan Ali (FA23-BCE-128)                            " << "\n";
+    cout << setw(consoleWidth) << "   Muhammad Ahmad (FA23-BCE-113)                         " << "\n";
     cout << setw(consoleWidth) << "---------------------------------------------------------" << "\n";
 
     // Predefined file name
-    string fileName = "C:/Users/AR Computers/OneDrive/Desktop/SEP/SEP/data/weather_data.csv";
+    string fileName = "../data/weather_data.csv";
 1
     // Objects for retrieving data and performing analyses
     DataRetriever retriever;

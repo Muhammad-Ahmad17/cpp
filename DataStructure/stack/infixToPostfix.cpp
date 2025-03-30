@@ -1,3 +1,10 @@
+//1:isalnum>addtostring
+//2:is'('>pushtostack
+//3:is')'>first addtostring then pop untill stack empty or '(' comes
+//4:is'+-*/'while stacknotempty and top.precedence>=ch.precedence
+// addtostring>stack.top>pop>then push ch
+// while stack not empty push to addtostring and then pop
+
 #include <iostream>
 #include <stack>
 #include <string>
@@ -22,12 +29,6 @@ bool isOperator(char ch) {
 string infixToPostfix(const string& expression) {
     stack<char> stack;
     string postfix;
-//1:isalnum>addtostring
-//2:is'('>pushtostack
-//3:is')'>first addtostring then pop untill stack empty or '(' comes
-//4:is'+-*/'while stacknotempty and top.precedence>=ch.precedence
-// addtostring>stack.top>pop>then push ch
-// while stack not empty push to addtostring and then pop
 
     for (char ch : expression) {
         // If the character is an operand (alphanumeric), add it to postfix output

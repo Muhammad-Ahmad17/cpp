@@ -43,7 +43,7 @@ int main() {
     int arr[size];
     readArray( arr, size);
 
-    printArray( arr, size);
+    print_array( arr, size, "lopoooo");
 
     return 0;
 }

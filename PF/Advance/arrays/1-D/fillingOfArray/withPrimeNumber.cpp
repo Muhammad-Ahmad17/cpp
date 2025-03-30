@@ -8,29 +8,8 @@
   Date: 2024-07-02.  
            
   TIME: 11:01 PM.
-*//*
-*//**
-  Copyright (c) 2024
-
-  Name: MUHAMMAD AHMAD.
-
-  Project Name: PF.
-
-  Date: 2024-07-02.
-
-  TIME: 10:57 PM.
-*//*
-*//**
-  Copyright (c) 2024
-
-  Name: MUHAMMAD AHMAD.
-
-  Project Name: PF.
-
-  Date: 2024-07-02.
-
-  TIME: 10:30 PM.
-*//*
+*/
+/*
 #include <iostream>
 using namespace std;
 
