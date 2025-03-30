@@ -23,4 +23,5 @@ int main() {
 }
 /*size of array = total element * 4 -> integer is of 4
  sizeof(arr[0]) = 4 -> its basically one index size which we know for integer is 4
- */
+ also arr[0] is the base address of the array we can access all elements of arr by adding offset of sizeof(arr[0]){4 in case}
+  */

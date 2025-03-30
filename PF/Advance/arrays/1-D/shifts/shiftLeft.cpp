@@ -31,7 +31,9 @@ void printArray( int arr[], int size) {
     cout << endl;
 }
 
-
+//explain the function
+// The function shiftLeft takes an array and its size as input and shifts 
+// the elements of the array to the left by one position.
 void shiftLeft(int arr[] , int size ){
     for (int i=0 ; i+1<size ; i++){
         swap(arr[i],arr[i+1]);

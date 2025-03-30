@@ -62,8 +62,5 @@ int main() {
     int alpha [6]={5,9,4,35,45,43};
     cout << smallestIndex( alpha , 6);
 
-
-
-
     return 0;
 }
