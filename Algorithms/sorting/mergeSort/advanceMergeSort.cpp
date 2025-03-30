@@ -36,38 +36,7 @@ void merge(int arr[], int left, int mid, int right) {
     delete[] leftArr;
     delete[] rightArr;
 }
-void mergre(int arr[], int left, int mid, int right) {
 
-    int leftSize = mid-left+1;
-    int rightSize = right-mid;
-
-    int* leftArr = new int [leftSize];
-    int * rightArr = new int[rightSize];
-
-    for (int i = 0; i < leftSize; i++)
-        leftArr[i] = arr[left + i];
-    for (int j = 0; j < rightSize; j++)
-        rightArr[j] = arr[mid + 1 + j];
-
-    int i=0,j=0,k=left;
-
-    while (i<leftSize && j<rightSize){
-        if(leftArr[i]<=rightArr[j]){
-            arr[k++]=leftArr[i++];
-        }else {
-            arr[k++]=rightArr[j++];
-        }
-    }
-    for (;i<leftSize;){
-        arr[k++] = leftArr[i++];
-    }
-    for (;j<rightSize;) {
-        arr[k++] = rightArr[j++];
-    }
-
-    delete [] leftArr;
-    delete [] rightArr;
-}
 // Recursive Merge Sort function
 void mergeSort(int arr[], int left, int right) {
     if (left < right) {
