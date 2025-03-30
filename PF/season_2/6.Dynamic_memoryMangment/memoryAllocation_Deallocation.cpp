@@ -5,22 +5,20 @@
                               
   Project Name: PF.          
                               
-  Date: 2024-09-16.  
+  Date: 2024-09-05.  
            
-  TIME: 10:23 PM.
+  TIME: 8:02 PM.
 */
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
 
 int main() {
-    int arr[6]={2,4,6,3,23,43};
-    int *p=arr ;
-    for (int i=0 ; i<=5 ; i++){
-        cout << endl << i << "-th element: " << * (arr+i);
-    }
-    delete p;
+    int *ptr = new int (4); // allocate
 
+    cout << *ptr << "\n" ; //use
+    cout << sizeof(int) ; //print
+
+    delete ptr; // deallocate
     return 0;
 }
