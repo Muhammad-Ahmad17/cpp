@@ -23,7 +23,7 @@ int main() {
         cout << endl << i << "-th element: " << i[arr] ; // this is the same as above line 
 
         
-        // low level implementationarr[i] is equivalent to *(arr+i) ===> arr points to the first(base) element's address i is the 
+        // low level implementation of arr[i] is equivalent to *(arr+i) ===> arr points to the first(base) element's address i is the 
         // offset(1*4){4 bytes for int which may vary according to the archetecture of computer} from the base address 
         // ==> we know (a+b==b+a)
         // similarly (arr+i) is equivalent to (i+arr)
